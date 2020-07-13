@@ -3,7 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git</title>
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/e7101f5302.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/index.js" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <div class="col-left-6">
+        <h1>
+          Recent Search:
+        </h1>
+        <form id="search-city">
+          <input
+            type="text"
+            placeholder="🔎 Search City"
+            class="search-field"
+            id="search-text-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+
+        <div class="row">
+          <span class="days">
+            <div class="col-8">Tuesday</div>
+            <div class="col-8">Wednesday</div>
+            <div class="col-8">Thursday</div>
+            <div class="col-8">Friday</div>
+            <div class="col-8">Saturday</div>
+            <div class="col-8">Sunday</div>
+          </span>
+          <span class="weather-icon">
+            <div class="col-8"><i class="fas fa-cloud-sun"></i></div>
+            <div class="col-8"><i class="fas fa-cloud-showers-heavy"></i></div>
+            <div class="col-8"><i class="fas fa-cloud"></i></div>
+            <div class="col-8"><i class="fas fa-sun"></i></div>
+            <div class="col-8"><i class="fas fa-cloud-sun"></i></div>
+            <div class="col-8"><i class="fas fa-cloud-sun"></i></div>
+          </span>
+          <span class="degrees">
+            <div class="col-8">63°/52°</div>
+            <div class="col-8">60°/49°</div>
+            <div class="col-8">65°/50°</div>
+            <div class="col-8">75°/69°</div>
+            <div class="col-8">72°/65°</div>
+            <div class="col-8">78°/67°</div>
+          </span>
+        </div>
+      </div>
+      <div class="col-right-6">
+        <div class="current-city">
+          <h2>
+            New York, NY
+          </h2>
+          <div class="today">
+            <h3>
+              Today Monday
+              <br />
+              <i class="fas fa-cloud-showers-heavy"></i>
+            </h3>
+            <h4>59°/52</h4>
+            <p>
+              <em>
+                <smaller
+                  >Mostly couldy with rain showers through out the day</smaller
+                >
+                <br />
+              </em>
+            </p>
+            <div class="row">
+              <span class="information">
+                <div class="col-3"><small>Sunrise</small><br />5:23am</div>
+                <div class="col-3"><small>Sunset</small><br />5:10pm</div>
+                <div class="col-3">
+                  <small>Wind</small><br /><em id="wind-speed">15</em>
+                </div>
+                <div class="col-3">
+                  <small> Humidity</small><br /><em id="humidity">75%</em>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
